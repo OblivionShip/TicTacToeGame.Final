@@ -13,7 +13,6 @@ import javax.swing.SwingUtilities;
 import javax.swing.AbstractAction;
 
 public class TicTacToeGame extends JFrame {
-	private static final int Outcome = 0;
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater( new Runnable () {
 	           public void run() { new TicTacToeGame();}
@@ -41,7 +40,7 @@ public class TicTacToeGame extends JFrame {
 				this.setVisible(true);
 		}
 		
-		static Enum<Outcome> getOutcome() {
+		static Outcome getOutcome() {
 			//ROWS//
 			if(gb.getCells()[0][0].getContent() == Mark.NOUGHT 
 					&& gb.getCells()[0][1].getContent() == Mark.NOUGHT 
